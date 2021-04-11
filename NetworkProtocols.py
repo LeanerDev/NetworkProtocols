@@ -48,6 +48,12 @@ elif network == "7":
 	port = input("type port:")
 	archive = input("file name:")
 	os.system("nc -nlvp  {} < {}".format(port,archive))
+elif network  >= "8":
+	os.system("echo ERROR tente novamente")
+	sys.exit()
+elif network <= "0":
+	print("echo ERROR tente novamente")
+	
 
 	
 	
